@@ -1,20 +1,3 @@
-### Hardware-Setup
-
-- **Gerät:** LILYGO® TTGO T-7670E R2 mit integriertem A7670E-Modul (4G/LTE, GPS)
-- **Sensoren:**
-	- **GPS** direkt im A7670E-Modul integriert, aktiviert über AT-Befehle, funktioniert ohne Internetverbindung, benötigt freie Sicht zum Himmel.
-    - **BMI160** – I2C-basierter Beschleunigungs- und Gyroskop-Sensor, über Jumperkabel direkt mit dem ESP32 verbunden.
-- **Kommunikation:**
-    - GSM-/4G-Modul über UART, gesteuert durch AT-Befehle
-    - MQTT zur Datenübertragung an den Server
-- **Stromversorgung:**
-    - 18650 Li-Ion-Akku (Samsung), geladen über Kraftmax BC-2000 USB
-    - Akkustand wird per Spannungsteiler erfasst und in der App angezeigt
-- **Gehäuse:**
-	- Eigenständig konstruiert mit Solid Edge, 3D-gedruckt auf einem Bambu Lab A1
-
-![Hardware Setup](Hardwaresetup.jpeg)
-
 ### Mikrocontroller-Code
 
 - **Entwicklungsumgebung:** Visual Studio Code mit PlatformIO
@@ -47,3 +30,20 @@
 Hilfreichste Quellen: 
 https://github.com/Xinyuan-LilyGO/LilyGO-T-A76XX?spm=a2g0o.detail.1000023.1.7b57ZrjfZrjfLD
 https://randomnerdtutorials.com/lilygo-ttgo-t-a7670g-a7670e-a7670sa-esp32/
+
+### Hardware-Setup
+
+- **Gerät:** LILYGO® TTGO T-7670E R2 mit integriertem A7670E-Modul (4G/LTE, GPS)
+- **Sensoren:**
+	- **GPS** direkt im A7670E-Modul integriert, aktiviert über AT-Befehle, funktioniert ohne Internetverbindung, benötigt freie Sicht zum Himmel.
+    - **BMI160** – I2C-basierter Beschleunigungs- und Gyroskop-Sensor, über Jumperkabel direkt mit dem ESP32 verbunden.
+- **Kommunikation:**
+    - GSM-/4G-Modul über UART, gesteuert durch AT-Befehle
+    - MQTT zur Datenübertragung an den Server
+- **Stromversorgung:**
+    - 18650 Li-Ion-Akku (Samsung), geladen über Kraftmax BC-2000 USB
+    - Akkustand wird per Spannungsteiler erfasst und in der App angezeigt
+- **Gehäuse:**
+	- Eigenständig konstruiert mit Solid Edge, 3D-gedruckt auf einem Bambu Lab A1
+
+![Hardware Setup](Hardwaresetup.jpeg)
