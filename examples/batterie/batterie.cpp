@@ -1,16 +1,16 @@
 #include <Arduino.h>
 
-#define BOARD_BAT_ADC_PIN 35  // Batteriemessung
+#define BOARD_BAT_ADC_PIN 35 
 
 void setup() {
   Serial.begin(115200);
-  delay(1000); // Warten auf seriellen Monitor
-  analogReadResolution(12); // 12 Bit ADC (0 - 4095)
+  delay(1000); 
+  analogReadResolution(12); 
 }
 
 float readBatteryVoltage() {
   int adcValue = analogRead(BOARD_BAT_ADC_PIN);
-  // Bei TTGO T-A7670E ist i.d.R. ein 100k/100k Spannungsteiler vorhanden -> *2
+ 
   float voltage = (adcValue / 4095.0) * 3.3 * 2;
   return voltage;
 }

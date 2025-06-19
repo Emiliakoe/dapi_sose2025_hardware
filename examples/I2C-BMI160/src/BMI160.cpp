@@ -42,7 +42,6 @@ void setup() {
 }
 
 void loop() {
-  // *******************
   // Eingabe prüfen
   if (Serial.available()) {
     char c = Serial.read();

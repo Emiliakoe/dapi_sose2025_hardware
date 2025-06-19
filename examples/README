@@ -1,4 +1,0 @@
-const char SIM_PIN[] = "9180";
-const char apn[]  = "internet.telekom";
-const char user[] = "016097693296";
-const char pass[] = "DapiProjekt2025";
