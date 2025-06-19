@@ -13,14 +13,14 @@
 - **Gehäuse:**
 	- Eigenständig konstruiert mit Solid Edge, 3D-gedruckt auf einem Bambu Lab A1
 
-  ![[Hardwaresetup.jpeg]]
+![Hardware Setup](Hardwaresetup.jpeg)
 
 ### Mikrocontroller-Code
 
 - **Entwicklungsumgebung:** Visual Studio Code mit PlatformIO
 - **Framework:** Arduino für ESP32 (espressif32@6.10.0)
 - **Setup:**
-    - Alle Hardwaremodule wurden zunächst einzeln getestet und anschließend in einem Gesamtprojekt zusammengeführt. ==(examples/DAPI_AKTUELL/dapi.cpp)==
+    - Alle Hardwaremodule wurden zunächst einzeln getestet und anschließend in einem Gesamtprojekt zusammengeführt. (examples/DAPI_AKTUELL/dapi.cpp)
     - Code-Struktur modular aufgebaut: GPS-, Sensor-, MQTT- und Batterie-Komponenten einzeln gekapselt.
 - **Funktion:**
     - Initialisierung des GSM-/GPS-Moduls und Sensoren
@@ -37,7 +37,7 @@
 - **Beispielhafte MQTT-Nachricht:**
     {   "latitude": 49.123456,   "longitude": 12.123456,   "speed_kmph": 3.5,   "accel": {"x": 0.12, "y": 0.03, "z": 9.81},   "gyro": {"x": 0.5, "y": 0.2, "z": 1.1},   "aktion": "gehen",   "akku": 85 }
 
-   
+   ![Pinout](Pinout.png)
 
     **Probleme:**
     - GPS benötigt freie Sicht; erste Fixes dauern bei Kaltstart deutlich länger
